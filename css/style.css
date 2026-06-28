@@ -1,0 +1,185 @@
+:root {
+  --bg: #0f1116;
+  --card: #1a1d27;
+  --text: #e7e9ee;
+  --muted: #9aa0ad;
+  --accent: #5b8cff;
+  --border: #2a2f3d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", Meiryo, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a { color: var(--accent); }
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 2rem;
+}
+
+.site-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.site-header h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  color: var(--muted);
+  margin: 0;
+}
+
+.back-link { text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+
+/* ---- カード一覧 ---- */
+.app-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.app-card {
+  display: flex;
+  gap: 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.app-thumb {
+  flex: 0 0 150px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0b0d12;
+  align-self: flex-start;
+}
+
+.app-thumb img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.app-body { flex: 1; min-width: 0; }
+
+.app-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+}
+.app-name a { color: var(--text); text-decoration: none; }
+.app-name a:hover { color: var(--accent); }
+
+.app-platform {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.05rem 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-tagline {
+  margin: 0.4rem 0 0.5rem;
+  color: var(--text);
+}
+
+.app-note {
+  margin: 0.5rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.45rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background .15s ease, border-color .15s ease;
+}
+
+.btn:hover { border-color: var(--accent); }
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary:hover { background: #3f73f0; }
+
+/* ---- 詳細ページ ---- */
+.detail-header { margin-bottom: 1.25rem; }
+.detail-header h1 { font-size: 2rem; margin: 0 0 0.4rem; }
+
+.detail-shot {
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0b0d12;
+}
+.detail-shot img { display: block; width: 100%; height: auto; }
+
+.detail-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1rem;
+}
+.detail-section h2 {
+  font-size: 1.15rem;
+  margin: 0.3rem 0 0.6rem;
+  color: var(--accent);
+}
+.detail-section ul { margin: 0; padding-left: 1.2rem; }
+.detail-section li { margin: 0.25rem 0; }
+
+.detail-links { margin-top: 1.5rem; }
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 2rem 1rem 3rem;
+}
+
+/* ---- スマホ ---- */
+@media (max-width: 560px) {
+  .app-card { flex-direction: column; }
+  .app-thumb { flex-basis: auto; width: 100%; }
+  .app-thumb img { height: 180px; }
+}
