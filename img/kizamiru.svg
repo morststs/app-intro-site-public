@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800" role="img" aria-label="Kizamiru の画面イメージ">
+  <defs>
+    <style>
+      .f { font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
+      .ttl { font-size: 30px; font-weight: 700; fill: #111827; }
+      .brand { font-size: 22px; font-weight: 700; fill: #111827; }
+      .tab { font-size: 15px; font-weight: 500; fill: #6b7280; }
+      .tab-on { font-size: 15px; font-weight: 600; fill: #1d4ed8; }
+      .item { font-size: 17px; fill: #111827; }
+      .item-done { font-size: 17px; fill: #9ca3af; }
+      .note { font-size: 14px; fill: #6b7280; }
+      .meta { font-size: 14px; fill: #9ca3af; }
+      .btn { font-size: 13px; fill: #374151; }
+      .badge { font-size: 12px; fill: #4b5563; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="800" fill="#f9fafb"/>
+
+  <!-- ヘッダー -->
+  <rect x="0" y="0" width="1280" height="64" fill="#ffffff"/>
+  <rect x="0" y="63" width="1280" height="1" fill="#e5e7eb"/>
+  <text class="f brand" x="256" y="40">Kizamiru</text>
+
+  <g>
+    <rect x="700" y="18" width="96" height="30" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text class="f btn" x="716" y="38">もりし</text>
+    <rect x="806" y="18" width="132" height="30" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text class="f btn" x="822" y="38">ログイン中</text>
+    <rect x="948" y="18" width="34" height="30" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text class="f btn" x="960" y="38">?</text>
+    <rect x="990" y="18" width="34" height="30" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <path d="M1002 33a8 8 0 1 0 9 9 6.5 6.5 0 0 1-9-9z" fill="#4b5563"/>
+  </g>
+
+  <!-- タブ -->
+  <text class="f tab-on" x="256" y="112">自分のリスト</text>
+  <rect x="252" y="126" width="106" height="2.5" fill="#2563eb"/>
+  <text class="f tab" x="386" y="112">限定公開</text>
+  <text class="f tab" x="486" y="112">みんなの公開リスト</text>
+  <rect x="256" y="128" width="768" height="1" fill="#e5e7eb"/>
+
+  <!-- 題名まわり -->
+  <text class="f ttl" x="256" y="186">引っ越しの手続き</text>
+  <text class="f meta" x="256" y="214">作成者: もりし</text>
+
+  <g>
+    <rect x="256" y="232" width="66" height="24" rx="12" fill="#e5e7eb"/>
+    <text class="f badge" x="271" y="248">暮らし</text>
+    <rect x="330" y="232" width="66" height="24" rx="12" fill="#e5e7eb"/>
+    <text class="f badge" x="345" y="248">手続き</text>
+  </g>
+
+  <!-- 進み具合 -->
+  <text class="f note" x="256" y="296">3 / 7 (43%)</text>
+  <rect x="256" y="306" width="768" height="12" rx="6" fill="#e5e7eb"/>
+  <rect x="256" y="306" width="329" height="12" rx="6" fill="#2563eb"/>
+
+  <!-- 項目 -->
+  <rect x="256" y="346" width="768" height="386" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- 済み 1 -->
+  <rect x="280" y="372" width="20" height="20" rx="4" fill="#2563eb"/>
+  <path d="M284 382l4 4 8-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="f item-done" x="316" y="388">役所に転出届を出す</text>
+  <rect x="316" y="381" width="170" height="1.4" fill="#9ca3af"/>
+  <rect x="280" y="410" width="720" height="1" fill="#f3f4f6"/>
+
+  <!-- 済み 2 -->
+  <rect x="280" y="436" width="20" height="20" rx="4" fill="#2563eb"/>
+  <path d="M284 446l4 4 8-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="f item-done" x="316" y="452">電気・ガス・水道の停止を連絡する</text>
+  <rect x="316" y="445" width="306" height="1.4" fill="#9ca3af"/>
+  <rect x="280" y="474" width="720" height="1" fill="#f3f4f6"/>
+
+  <!-- 済み 3 -->
+  <rect x="280" y="500" width="20" height="20" rx="4" fill="#2563eb"/>
+  <path d="M284 510l4 4 8-8" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="f item-done" x="316" y="516">インターネットの移転を申し込む</text>
+  <rect x="316" y="509" width="289" height="1.4" fill="#9ca3af"/>
+  <rect x="280" y="538" width="720" height="1" fill="#f3f4f6"/>
+
+  <!-- 未 1（補足つき） -->
+  <rect x="280" y="564" width="20" height="20" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.6"/>
+  <text class="f item" x="316" y="580">郵便の転送届を出す</text>
+  <text class="f note" x="316" y="604">e-転居ならインターネットからでも申し込めます</text>
+  <rect x="280" y="626" width="720" height="1" fill="#f3f4f6"/>
+
+  <!-- 未 2 -->
+  <rect x="280" y="652" width="20" height="20" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.6"/>
+  <text class="f item" x="316" y="668">運転免許証の住所を変更する</text>
+  <rect x="280" y="690" width="720" height="1" fill="#f3f4f6"/>
+
+  <!-- 未 3 -->
+  <rect x="280" y="702" width="20" height="20" rx="4" fill="#ffffff" stroke="#9ca3af" stroke-width="1.6"/>
+  <text class="f item" x="316" y="718">銀行とクレジットカードの住所を変更する</text>
+</svg>
