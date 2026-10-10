@@ -45,6 +45,27 @@ a { color: var(--accent); }
 .back-link:hover { text-decoration: underline; }
 
 /* ---- カード一覧 ---- */
+.app-category { margin-bottom: 2.75rem; }
+
+.category-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 4px solid var(--accent);
+}
+
+.category-count {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 0.6rem;
+}
+
 .app-list {
   display: grid;
   gap: 1.5rem;
