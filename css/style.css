@@ -172,7 +172,17 @@ a { color: var(--accent); }
   overflow: hidden;
   background: #0b0d12;
 }
-.detail-shot img { display: block; width: 100%; height: auto; }
+/* 縦長のスクリーンショットは、幅いっぱいに伸ばすと画面を埋め尽くす
+   （inkmaru は 390x844 なので、本文幅 820px に合わせると高さ 1774px になる）。
+   高さに上限を置き、収まらないぶんは object-fit で letterbox にする。
+   横長の画像は上限に当たらないので、今までどおり幅いっぱいに出る。 */
+.detail-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}
 
 .detail-section {
   background: var(--card);
